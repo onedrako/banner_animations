@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: #0eed12;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 800px;
+  height: 200px;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.platform__container {
+  display: flex;
+  position: absolute;
+  left: -50px;
+  height: 200px;
+  width: 300px;
+  background: transparent;
+  z-index: 1;
+}
+.platform__container--green-screen {
+  height: 200px;
+  min-width: 50px;
+  position: relative;
+  right: -50px;
+  background: #0eed12;
+  z-index: 2;
+}
+.platform__container--logo {
+  display: flex;
+  height: 200px;
+  min-width: 200px;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  border: ridge 10px #fff;
+  border-radius: 50%;
+  animation-name: rotation;
+  animation-duration: 8s;
+  z-index: 3;
+  position: relative;
+}
+.twitch-logo {
+  background-image: url("https://logos-marcas.com/wp-content/uploads/2020/11/Twitch-Emblema.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+}
+.banner {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 600px;
+  height: 125px;
+  position: absolute;
+  top: 36px;
+  background: #000;
+  border-top: solid #fff 5px;
+  left: -510px;
+  animation-name: extend;
+  animation-duration: 8s;
+}
+.banner__info {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.banner__corner {
+  width: 85px;
+  height: 1205px;
+  background: linear-gradient(125deg, #000 50%, transparent 50%) 100px 0px;
+  background-size: 265px 335px;
+  position: relative;
+  left: 85px;
+  bottom: 5px;
+  border-top: solid #fff 5px;
+}
+@-moz-keyframes rotation {
+  15% {
+    transform: rotate(360deg);
+  }
+  85% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: static;
+  }
+}
+@-webkit-keyframes rotation {
+  15% {
+    transform: rotate(360deg);
+  }
+  85% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: static;
+  }
+}
+@-o-keyframes rotation {
+  15% {
+    transform: rotate(360deg);
+  }
+  85% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: static;
+  }
+}
+@keyframes rotation {
+  15% {
+    transform: rotate(360deg);
+  }
+  85% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: static;
+  }
+}
+@-moz-keyframes extend {
+  15% {
+    left: 75px;
+  }
+  85% {
+    left: 75px;
+  }
+  100% {
+    left: -510px;
+  }
+}
+@-webkit-keyframes extend {
+  15% {
+    left: 75px;
+  }
+  85% {
+    left: 75px;
+  }
+  100% {
+    left: -510px;
+  }
+}
+@-o-keyframes extend {
+  15% {
+    left: 75px;
+  }
+  85% {
+    left: 75px;
+  }
+  100% {
+    left: -510px;
+  }
+}
+@keyframes extend {
+  15% {
+    left: 75px;
+  }
+  85% {
+    left: 75px;
+  }
+  100% {
+    left: -510px;
+  }
+}
