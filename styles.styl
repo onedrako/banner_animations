@@ -93,7 +93,7 @@ body
 
 .banner
     display: flex
-    flex-direction: row-reverse
+    flex-direction: row
     width: 600px
     height: 125px
     position absolute
@@ -109,7 +109,24 @@ body
     &__info
         display: grid
         grid-template-columns: repeat(5, 1fr)
-        
+        grid-template-rows: repeat(2, 1fr)
+        width: 515px
+        &--info-description
+            grid-column-start: 2
+            grid-column-end: 7
+            grid-row-start: 1
+            grid-row-end: 2
+            color: white
+            text-align: end
+            font-size: 1.8rem
+        &--name-description
+            grid-column-start: 3
+            grid-column-end: 7
+            grid-row-start: 2
+            grid-row-end: 3
+            color: white
+            text-align: end
+            font-size: 1.8rem
     &__corner
         width: 85px
         height: 1205px
