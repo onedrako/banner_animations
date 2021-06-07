@@ -8,7 +8,7 @@
 
 body
     display: flex
-    height: 100vh
+    flex-direction: column
     width: 100vw
     background: #0EED12
     // background: gray
@@ -19,6 +19,7 @@ body
 .container
     width: 800px
     height: 200px
+    margin: 150px
     position relative
     overflow-x: hidden
     overflow-y: hidden
@@ -83,13 +84,16 @@ body
     //     }
 }
 
-.twitch-logo
-    background-image: url(https://logos-marcas.com/wp-content/uploads/2020/11/Twitch-Emblema.png)
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: center
-    width: 100px
+.logo
+    // background-image: url(https://logos-marcas.com/wp-content/uploads/2020/11/Twitch-Emblema.png)
+    // background-repeat: no-repeat
+    // background-size: cover
+    // background-position: center
     height: 100px
+    &--bigger
+        height: 150px
+    &--option2
+        height: 135px
 
 .banner
     display: flex
@@ -102,6 +106,7 @@ body
     background: black  
     border-top: solid white 5px
     left: -510px
+    // left: 0
     animation-name: extend
     animation-duration: 8s
     // animation-iteration-count: infinite
@@ -117,15 +122,15 @@ body
             grid-row-start: 1
             grid-row-end: 2
             color: white
-            text-align: end
+            text-align: right
             font-size: 1.8rem
         &--name-description
-            grid-column-start: 3
+            grid-column-start: 2
             grid-column-end: 7
             grid-row-start: 2
             grid-row-end: 3
             color: white
-            text-align: end
+            text-align: right
             font-size: 1.8rem
     &__corner
         width: 85px
