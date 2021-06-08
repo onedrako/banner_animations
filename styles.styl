@@ -1,4 +1,12 @@
 // background: linear-gradient(27deg, rgba(255,0,0,1) 11%, rgba(0,255,0,1) 50%, rgba(0,0,255,1) 98%);
+color-twitch =  #a644ff
+color-youtube= #f44336
+color-twitter= #55acee
+color-instagram = #f04c5a
+color-tiktok1 = #81d4fa
+color-tiktok2 = #ec407a
+color-discord = #5765f1
+
 
 *
     padding: 0
@@ -117,6 +125,8 @@ body
         grid-template-rows: repeat(2, 1fr)
         width: 515px
         &--info-description
+            display: flex
+            justify-content: flex-end
             grid-column-start: 2
             grid-column-end: 7
             grid-row-start: 1
@@ -130,6 +140,8 @@ body
             grid-row-start: 2
             grid-row-end: 3
             color: white
+            // -webkit-text-fill-color: white;
+            // -webkit-text-stroke: 2px purple;
             text-align: right
             font-size: 1.8rem
     &__corner
@@ -144,6 +156,35 @@ body
         bottom 5px
         border-top: solid white 5px
 
+.twitch
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1.5px color-twitch;
+
+.youtube
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1.5px color-youtube;
+
+.twitter
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1.5px color-twitter;
+
+.instagram
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1.5px color-instagram;
+
+.tiktok
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1.5px color-tiktok2;
+    // &-first
+    //     -webkit-text-fill-color: white;
+    //     -webkit-text-stroke: 1.5px color-tiktok1;
+    // &-second
+    //     -webkit-text-fill-color: white;
+    //     -webkit-text-stroke: 1.5px color-tiktok2;
+
+.discord
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1.5px color-discord;
 
 @keyframes extend{
     0%{

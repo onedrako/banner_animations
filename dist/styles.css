@@ -80,6 +80,8 @@ body {
   width: 515px;
 }
 .banner__info--info-description {
+  display: flex;
+  justify-content: flex-end;
   grid-column-start: 2;
   grid-column-end: 7;
   grid-row-start: 1;
@@ -106,6 +108,30 @@ body {
   left: 85px;
   bottom: 5px;
   border-top: solid #fff 5px;
+}
+.twitch {
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke: 1.5px #a644ff;
+}
+.youtube {
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke: 1.5px #f44336;
+}
+.twitter {
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke: 1.5px #55acee;
+}
+.instagram {
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke: 1.5px #f04c5a;
+}
+.tiktok {
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke: 1.5px #ec407a;
+}
+.discord {
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke: 1.5px #5765f1;
 }
 @-moz-keyframes rotation {
   15% {
