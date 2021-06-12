@@ -85,19 +85,11 @@ body {
   grid-column-start: 2;
   grid-column-end: 7;
   grid-row-start: 1;
-  grid-row-end: 2;
-  color: #fff;
-  text-align: right;
-  font-size: 1.8rem;
-}
-.banner__info--name-description {
-  grid-column-start: 2;
-  grid-column-end: 7;
-  grid-row-start: 2;
   grid-row-end: 3;
   color: #fff;
-  text-align: right;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  align-items: center;
+  margin-bottom: 10px;
 }
 .banner__corner {
   width: 85px;
